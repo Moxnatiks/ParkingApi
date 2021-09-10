@@ -9,8 +9,8 @@ using ParkingApi.Responses.Valets;
 using ParkingApi.Settings;
 using System;
 using System.Collections.Generic;
-
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace ParkingApi.Services.Valets
 {
@@ -47,7 +47,7 @@ namespace ParkingApi.Services.Valets
             return response;
         }
 
-        public PaginateResponse<ValetSessionResponse> GetParkingSessionsById (long parkingId, ParkingSessionParametrs parkingSessionParametrs)
+        public async Task<PaginateResponse<ValetSessionResponse>> GetParkingSessionsById (long parkingId, ParkingSessionParametrs parkingSessionParametrs)
         {
 
             IQueryable<Session> sessions = _sessionRepository.FilterSessionByParkingId(parkingId);
@@ -55,7 +55,7 @@ namespace ParkingApi.Services.Valets
             //Search
             if (!String.IsNullOrEmpty(parkingSessionParametrs.searchNumberCar))
             {
-                sessions = sessions.Where(s => s.Car.Number.Contains(parkingSessionParametrs.searchNumberCar)
+                 sessions = sessions.Where(s => s.Car.Number.Contains(parkingSessionParametrs.searchNumberCar)
                                        /*|| s.Car.Model.Contains(searchNumberCar)*/);
             }
 
@@ -78,7 +78,7 @@ namespace ParkingApi.Services.Valets
                     break;
             }
 
-            PagedList<Session> paginate = PagedList<Session>.ToPagedList(sessions, parkingSessionParametrs.PageNumber , parkingSessionParametrs.PageSize);
+            PagedList<Session> paginate = await PagedList<Session>.ToPagedList(sessions, parkingSessionParametrs.PageNumber , parkingSessionParametrs.PageSize);
 
             PaginateResponse < ValetSessionResponse > response  = MP.Map<PaginateResponse<ValetSessionResponse>>(paginate);
 
