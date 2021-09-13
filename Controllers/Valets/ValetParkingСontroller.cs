@@ -5,6 +5,8 @@ using ParkingApi.Responses;
 using ParkingApi.Responses.Valets;
 using ParkingApi.Services.Valets;
 using ParkingApi.Settings;
+using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 
 namespace ParkingApi.Controllers.Valets
 {
@@ -96,14 +98,14 @@ namespace ParkingApi.Controllers.Valets
         //test
         [HttpGet]
         [Route("session/get/{parkingId}")]
-        public ActionResult<PaginateResponse<ValetSessionResponse>> GetParkingSessionsById(long parkingId, [FromQuery] ParkingSessionParametrs parkingSessionParametrs)
+        public async Task<ActionResult<PaginateResponse<ValetSessionResponse>>> GetParkingSessionsById(long parkingId, [FromQuery] ParkingSessionParametrs parkingSessionParametrs)
         {
 
 
             // PaginateResponse < IEnumerable < Session >> ttt = _service.GetParkingSessionsById(parkingId, parkingSessionParametrs);
 
 
-            PaginateResponse < ValetSessionResponse > response = _service.GetParkingSessionsById(parkingId, parkingSessionParametrs);
+            PaginateResponse < ValetSessionResponse > response = await _service.GetParkingSessionsById(parkingId, parkingSessionParametrs);
 
 
 

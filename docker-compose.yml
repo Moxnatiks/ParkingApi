@@ -3,7 +3,7 @@
 services:
 
   parkingapi:
-    image: parkingapiproduct
+    image: parkingapi
     build:
       context: .
       dockerfile: Dockerfile
