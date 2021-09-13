@@ -49,11 +49,11 @@ namespace ParkingApi.Migrations
                         new
                         {
                             Id = 1L,
-                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 1, 0, 0, 41, 14, DateTimeKind.Unspecified).AddTicks(6332), new TimeSpan(0, 3, 0, 0, 0)),
+                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 13, 19, 5, 13, 488, DateTimeKind.Unspecified).AddTicks(4756), new TimeSpan(0, 3, 0, 0, 0)),
                             Email = "admin@gmail.com",
                             Full_name = "John Doe",
-                            Password = "+Z4l4oyrs0krAHYGJi0R0YLfrN0VXslFl4p5xGcR2fk=",
-                            StoredSalt = new byte[] { 44, 106, 55, 86, 92, 107, 92, 49, 225, 13, 200, 33, 202, 9, 99, 111 }
+                            Password = "fVdaszZKAHRWH9Be+fSY+qPZ70QkF/Y/eJrflxj9BxE=",
+                            StoredSalt = new byte[] { 221, 136, 6, 156, 33, 157, 117, 105, 22, 203, 20, 183, 126, 90, 53, 253 }
                         });
                 });
 
@@ -98,21 +98,101 @@ namespace ParkingApi.Migrations
                         new
                         {
                             Id = 1L,
-                            Color = "green",
-                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 1, 0, 0, 41, 103, DateTimeKind.Unspecified).AddTicks(6558), new TimeSpan(0, 3, 0, 0, 0)),
-                            IsDefaulte = true,
-                            Model = "Volga",
-                            Number = "AA1234BB",
+                            Color = "#116867",
+                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 13, 19, 5, 13, 614, DateTimeKind.Unspecified).AddTicks(8991), new TimeSpan(0, 3, 0, 0, 0)),
+                            IsDefaulte = false,
+                            Model = "LLBRPTVQ",
+                            Number = "BB7061DD",
                             UserId = 1L
                         },
                         new
                         {
                             Id = 2L,
-                            Color = "red",
-                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 1, 0, 0, 41, 103, DateTimeKind.Unspecified).AddTicks(6596), new TimeSpan(0, 3, 0, 0, 0)),
+                            Color = "#131b52",
+                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 13, 19, 5, 13, 614, DateTimeKind.Unspecified).AddTicks(8991), new TimeSpan(0, 3, 0, 0, 0)),
                             IsDefaulte = false,
-                            Model = "Nissan",
-                            Number = "AA4321BB",
+                            Model = "JJQNEVAV",
+                            Number = "AA2712AD",
+                            UserId = 1L
+                        },
+                        new
+                        {
+                            Id = 3L,
+                            Color = "#7f6575",
+                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 13, 19, 5, 13, 614, DateTimeKind.Unspecified).AddTicks(8991), new TimeSpan(0, 3, 0, 0, 0)),
+                            IsDefaulte = false,
+                            Model = "PBONKPLE",
+                            Number = "BD1679AB",
+                            UserId = 1L
+                        },
+                        new
+                        {
+                            Id = 4L,
+                            Color = "#61636f",
+                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 13, 19, 5, 13, 614, DateTimeKind.Unspecified).AddTicks(8991), new TimeSpan(0, 3, 0, 0, 0)),
+                            IsDefaulte = false,
+                            Model = "VUOWUOEP",
+                            Number = "CD6275CA",
+                            UserId = 1L
+                        },
+                        new
+                        {
+                            Id = 5L,
+                            Color = "#65050f",
+                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 13, 19, 5, 13, 614, DateTimeKind.Unspecified).AddTicks(8991), new TimeSpan(0, 3, 0, 0, 0)),
+                            IsDefaulte = false,
+                            Model = "FWQQRWUM",
+                            Number = "CD0800AB",
+                            UserId = 1L
+                        },
+                        new
+                        {
+                            Id = 6L,
+                            Color = "#7f1a12",
+                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 13, 19, 5, 13, 614, DateTimeKind.Unspecified).AddTicks(8991), new TimeSpan(0, 3, 0, 0, 0)),
+                            IsDefaulte = false,
+                            Model = "RXFXUJQQ",
+                            Number = "BA2837AC",
+                            UserId = 1L
+                        },
+                        new
+                        {
+                            Id = 7L,
+                            Color = "#740177",
+                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 13, 19, 5, 13, 614, DateTimeKind.Unspecified).AddTicks(8991), new TimeSpan(0, 3, 0, 0, 0)),
+                            IsDefaulte = false,
+                            Model = "VXABPUOX",
+                            Number = "CA5271CA",
+                            UserId = 1L
+                        },
+                        new
+                        {
+                            Id = 8L,
+                            Color = "#105d71",
+                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 13, 19, 5, 13, 614, DateTimeKind.Unspecified).AddTicks(8991), new TimeSpan(0, 3, 0, 0, 0)),
+                            IsDefaulte = false,
+                            Model = "THAFMLGX",
+                            Number = "CA9521CA",
+                            UserId = 1L
+                        },
+                        new
+                        {
+                            Id = 9L,
+                            Color = "#6c6d64",
+                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 13, 19, 5, 13, 614, DateTimeKind.Unspecified).AddTicks(8991), new TimeSpan(0, 3, 0, 0, 0)),
+                            IsDefaulte = false,
+                            Model = "NDGKDMST",
+                            Number = "CC7625AB",
+                            UserId = 1L
+                        },
+                        new
+                        {
+                            Id = 10L,
+                            Color = "#654971",
+                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 13, 19, 5, 13, 614, DateTimeKind.Unspecified).AddTicks(8991), new TimeSpan(0, 3, 0, 0, 0)),
+                            IsDefaulte = false,
+                            Model = "MOIVWVOP",
+                            Number = "BA0953AB",
                             UserId = 1L
                         });
                 });
@@ -193,7 +273,7 @@ namespace ParkingApi.Migrations
                         {
                             Id = 1L,
                             Address = "There and here?",
-                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 1, 0, 0, 41, 62, DateTimeKind.Unspecified).AddTicks(2761), new TimeSpan(0, 3, 0, 0, 0)),
+                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 13, 19, 5, 13, 526, DateTimeKind.Unspecified).AddTicks(9021), new TimeSpan(0, 3, 0, 0, 0)),
                             Price = 5.4500000000000002,
                             SecondFrom = 123456L,
                             SecondTo = 654321L
@@ -236,10 +316,10 @@ namespace ParkingApi.Migrations
                         {
                             Id = 1L,
                             CarId = 1L,
-                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 1, 0, 0, 41, 107, DateTimeKind.Unspecified).AddTicks(7395), new TimeSpan(0, 3, 0, 0, 0)),
-                            EndTime = new DateTime(2021, 9, 1, 1, 0, 41, 107, DateTimeKind.Local).AddTicks(6851),
+                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 13, 19, 5, 13, 632, DateTimeKind.Unspecified).AddTicks(5102), new TimeSpan(0, 3, 0, 0, 0)),
+                            EndTime = new DateTime(2021, 9, 13, 20, 5, 13, 632, DateTimeKind.Local).AddTicks(4546),
                             ParkingId = 1L,
-                            StartTime = new DateTime(2021, 9, 1, 0, 0, 41, 107, DateTimeKind.Local).AddTicks(5467)
+                            StartTime = new DateTime(2021, 9, 13, 19, 5, 13, 632, DateTimeKind.Local).AddTicks(2848)
                         });
                 });
 
@@ -282,14 +362,14 @@ namespace ParkingApi.Migrations
                         new
                         {
                             Id = 1L,
-                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 1, 0, 0, 41, 94, DateTimeKind.Unspecified).AddTicks(5477), new TimeSpan(0, 3, 0, 0, 0)),
+                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 13, 19, 5, 13, 549, DateTimeKind.Unspecified).AddTicks(8611), new TimeSpan(0, 3, 0, 0, 0)),
                             Email = "user@gmail.com",
                             First_name = "John",
                             IsAccess = true,
                             Last_name = "Doe",
-                            Password = "86H0U0gbLT0fO64VIJFYApp3CXEcZ2RPrk3chE5XCHY=",
+                            Password = "q5T4WjHJfXF3bH2udyV7SfAO2Ttl/mTo21ByUluYP1k=",
                             Phone = "+380994444333",
-                            StoredSalt = new byte[] { 186, 121, 65, 167, 195, 56, 147, 18, 52, 179, 1, 219, 63, 162, 242, 17 }
+                            StoredSalt = new byte[] { 22, 104, 126, 155, 88, 178, 155, 17, 32, 62, 103, 120, 169, 179, 94, 20 }
                         });
                 });
 
@@ -332,14 +412,14 @@ namespace ParkingApi.Migrations
                         new
                         {
                             Id = 1L,
-                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 1, 0, 0, 41, 40, DateTimeKind.Unspecified).AddTicks(9504), new TimeSpan(0, 3, 0, 0, 0)),
+                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 13, 19, 5, 13, 507, DateTimeKind.Unspecified).AddTicks(9338), new TimeSpan(0, 3, 0, 0, 0)),
                             Email = "valet@gmail.com",
                             Full_name = "Valet Doe",
                             IsAccess = true,
                             Jetton = "123456",
-                            Password = "5yZPpMErxV9m70UYhvrZMw5N6Ts2u1fDgcQD0QYUIGM=",
+                            Password = "N2Dip9tVqQO9bJ/ZtvmC9OhQ4PmY3IOHICUzZWs2gjc=",
                             Phone = "+380994444333",
-                            StoredSalt = new byte[] { 33, 52, 186, 25, 49, 207, 62, 177, 32, 65, 120, 115, 102, 41, 0, 227 }
+                            StoredSalt = new byte[] { 39, 240, 73, 131, 113, 10, 240, 133, 15, 231, 104, 154, 241, 18, 190, 13 }
                         });
                 });
 

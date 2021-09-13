@@ -7,6 +7,10 @@ using ParkingApi.Services.Valets;
 using ParkingApi.Settings;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using Bogus;
+using ParkingApi.Models;
+using System;
+using System.Collections.Generic;
 
 namespace ParkingApi.Controllers.Valets
 {
@@ -118,6 +122,17 @@ namespace ParkingApi.Controllers.Valets
             //PaginateResponse<Session> paginateResponse = MP.Map<PaginateResponse<Session>>(paginate);
 
             //ValetSessionResponsePaginate res = MP.Map<ValetSessionResponsePaginate>(paginate);
+
+            var carFaker = new Faker<Car>()
+                .RuleFor(o => o.Id, f => f.UniqueIndex)
+                .RuleFor(o => o.Model, f => f.Random.String(8, 'A', 'X'))
+                .RuleFor(o => o.Number, f => f.Random.String(2, 'A', 'D') + f.Random.String(4, '0', '9') + f.Random.String(2, 'A', 'D'))
+                .RuleFor(o => o.Color, f => f.Internet.Color())
+                .RuleFor(o => o.IsDefaulte, false)
+                .RuleFor(o => o.UserId, 1)
+                .RuleFor(o => o.CreatedDate, DateTimeOffset.Now);
+
+            List<Car> carsFaker = carFaker.Generate(10);
 
 
 
