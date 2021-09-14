@@ -9,8 +9,10 @@ EXPOSE 4000
 
 FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
 WORKDIR /src
+
 RUN dotnet tool install --global dotnet-ef
-ENV PATH="${PATH}:/root/.dotnet/tools"
+ENV PATH="${PATH}:~/.dotnet/tools"
+
 COPY ["ParkingApi.csproj", "."]
 RUN dotnet restore "./ParkingApi.csproj"
 COPY . .
