@@ -18,9 +18,6 @@ namespace ParkingApi.Models.Config
             builder.Property(t => t.IsDefaulte).HasDefaultValue(false);
             builder.Property(t => t.UserId).IsRequired(false).HasDefaultValue(null);
 
-            /*builder.HasOne(ss => ss.Session)
-                .WithOne(s => s.Car)
-                .HasForeignKey<Car>(b => b.Id);*/
             var Ids = 1;
             var carFaker = new Faker<Car>()
                 .RuleFor(o => o.Id, f => Ids++)
@@ -33,29 +30,7 @@ namespace ParkingApi.Models.Config
 
             List<Car> cars = carFaker.Generate(10);
 
-            builder.HasData(
-                cars
-                /*new Car
-                {
-                    Id = 1,
-                    Model = "Volga",
-                    Number = "AA1234BB",
-                    Color = "green",
-                    IsDefaulte = true,
-                    UserId = 1,
-                    CreatedDate = DateTimeOffset.Now
-                },
-                new Car
-                {
-                    Id = 2,
-                    Model = "Nissan",
-                    Number = "AA4321BB",
-                    Color = "red",
-                    IsDefaulte = false,
-                    UserId = 1,
-                    CreatedDate = DateTimeOffset.Now
-                }*/
-                );
+            builder.HasData( cars );
         }
     }
 }

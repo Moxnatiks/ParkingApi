@@ -36,19 +36,7 @@ namespace ParkingApi.Models.Config
 
             List<Session> sessions = sessionFaker.Generate(10);
 
-            builder.HasData
-                (
-                sessions
-/*                    new Session
-                    {
-                        Id = 1,
-                        CarId = 1,
-                        ParkingId = 1,
-                        StartTime = DateTime.Now,
-                        EndTime = DateTime.Now.AddHours(1),
-                        CreatedDate = DateTimeOffset.Now
-                    }*/
-                );
+            builder.HasData ( sessions );
 
         }
     }

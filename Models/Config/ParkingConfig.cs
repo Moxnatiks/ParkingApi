@@ -3,8 +3,6 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace ParkingApi.Models.Config
 {
@@ -33,19 +31,7 @@ namespace ParkingApi.Models.Config
 
             List<Parking> parkings = parkingFaker.Generate(10);
 
-
-            builder.HasData(
-                parkings
-/*                    new Parking
-                    {
-                        Id = 1,
-                        Address = "There and here?",
-                        Price = 5.45,
-                        SecondFrom = 123456,
-                        SecondTo = 654321,
-                        CreatedDate = DateTimeOffset.Now
-                    }*/
-                );
+            builder.HasData( parkings );
 
         }
     }
