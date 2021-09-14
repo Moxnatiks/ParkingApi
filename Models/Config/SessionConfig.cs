@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Bogus;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using System;
 using System.Collections.Generic;
@@ -23,9 +24,22 @@ namespace ParkingApi.Models.Config
                 .WithMany(s => s.Sessions)
                 .HasForeignKey(ss => ss.ParkingId);
 
+            var IdsS = 1;
+            var IdsC = 1;
+            var sessionFaker = new Faker<Session>()
+                .RuleFor(o => o.Id, f => IdsS++)
+                .RuleFor(o => o.CarId, f => IdsC++)
+                .RuleFor(o => o.ParkingId, f => f.Random.Int(1 , 2))
+                .RuleFor(o => o.StartTime, DateTime.Now)
+                .RuleFor(o => o.EndTime, DateTime.Now.AddHours(1))
+                .RuleFor(o => o.CreatedDate, DateTimeOffset.Now);
+
+            List<Session> sessions = sessionFaker.Generate(10);
+
             builder.HasData
                 (
-                    new Session
+                sessions
+/*                    new Session
                     {
                         Id = 1,
                         CarId = 1,
@@ -33,7 +47,7 @@ namespace ParkingApi.Models.Config
                         StartTime = DateTime.Now,
                         EndTime = DateTime.Now.AddHours(1),
                         CreatedDate = DateTimeOffset.Now
-                    }
+                    }*/
                 );
 
         }

@@ -28,6 +28,18 @@ namespace ParkingApi.Models.Config
                         Last_name = "Doe",
                         IsAccess = true,
                         Phone = "+380994444333",
+                        Email = "string",
+                        Password = data.Hash,
+                        StoredSalt = data.Salt,
+                        CreatedDate = DateTimeOffset.Now
+                    },
+                    new User
+                    {
+                        Id = 2,
+                        First_name = "Ruslan",
+                        Last_name = "Tonus",
+                        IsAccess = true,
+                        Phone = "+380993334444",
                         Email = "user@gmail.com",
                         Password = data.Hash,
                         StoredSalt = data.Salt,

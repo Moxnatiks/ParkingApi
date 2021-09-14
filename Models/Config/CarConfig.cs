@@ -22,20 +22,19 @@ namespace ParkingApi.Models.Config
                 .WithOne(s => s.Car)
                 .HasForeignKey<Car>(b => b.Id);*/
             var Ids = 1;
-
             var carFaker = new Faker<Car>()
-    .RuleFor(o => o.Id, f => Ids++)
-    .RuleFor(o => o.Model, f => f.Random.String(8, 'A', 'X'))
-    .RuleFor(o => o.Number, f => f.Random.String(2, 'A', 'D') + f.Random.String(4, '0', '9') + f.Random.String(2, 'A', 'D'))
-    .RuleFor(o => o.Color, f => f.Internet.Color())
-    .RuleFor(o => o.IsDefaulte, false)
-    .RuleFor(o => o.UserId, 1)
-    .RuleFor(o => o.CreatedDate, DateTimeOffset.Now);
+                .RuleFor(o => o.Id, f => Ids++)
+                .RuleFor(o => o.Model, f => f.Random.String(8, 'A', 'X'))
+                .RuleFor(o => o.Number, f => f.Random.String(2, 'A', 'X') + f.Random.String(4, '0', '9') + f.Random.String(2, 'A', 'X'))
+                .RuleFor(o => o.Color, f => f.Internet.Color())
+                .RuleFor(o => o.IsDefaulte, false)
+                .RuleFor(o => o.UserId, f => f.Random.Int(1,2))
+                .RuleFor(o => o.CreatedDate, DateTimeOffset.Now);
 
-            List<Car> carsFaker = carFaker.Generate(10);
+            List<Car> cars = carFaker.Generate(10);
 
             builder.HasData(
-                carsFaker
+                cars
                 /*new Car
                 {
                     Id = 1,
