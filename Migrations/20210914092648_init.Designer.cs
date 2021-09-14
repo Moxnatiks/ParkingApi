@@ -10,7 +10,7 @@ using ParkingApi.Settings;
 namespace ParkingApi.Migrations
 {
     [DbContext(typeof(ApiDbContext))]
-    [Migration("20210914084522_init")]
+    [Migration("20210914092648_init")]
     partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -51,11 +51,11 @@ namespace ParkingApi.Migrations
                         new
                         {
                             Id = 1L,
-                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 14, 11, 45, 21, 836, DateTimeKind.Unspecified).AddTicks(6591), new TimeSpan(0, 3, 0, 0, 0)),
+                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 14, 12, 26, 47, 312, DateTimeKind.Unspecified).AddTicks(1100), new TimeSpan(0, 3, 0, 0, 0)),
                             Email = "admin@gmail.com",
                             Full_name = "John Doe",
-                            Password = "7bTTczM/7AFVoUaijA8ZzIr9aine/ZnqiKHhCHtreds=",
-                            StoredSalt = new byte[] { 66, 59, 154, 42, 216, 126, 122, 108, 0, 79, 251, 115, 18, 27, 12, 155 }
+                            Password = "TyhMDFKBArJu716n88z9vYCju+OOxj75f/tdg5KlCC4=",
+                            StoredSalt = new byte[] { 188, 16, 131, 115, 241, 184, 193, 81, 53, 222, 197, 66, 219, 252, 227, 233 }
                         });
                 });
 
@@ -100,101 +100,101 @@ namespace ParkingApi.Migrations
                         new
                         {
                             Id = 1L,
-                            Color = "#602b14",
-                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 14, 11, 45, 21, 981, DateTimeKind.Unspecified).AddTicks(1600), new TimeSpan(0, 3, 0, 0, 0)),
+                            Color = "#1d6a4d",
+                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 14, 12, 26, 47, 494, DateTimeKind.Unspecified).AddTicks(5808), new TimeSpan(0, 3, 0, 0, 0)),
                             IsDefaulte = false,
-                            Model = "XMIBUUES",
-                            Number = "NE5840CK",
+                            Model = "SEBQHBON",
+                            Number = "LE6850NA",
                             UserId = 2L
                         },
                         new
                         {
                             Id = 2L,
-                            Color = "#491f1a",
-                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 14, 11, 45, 21, 981, DateTimeKind.Unspecified).AddTicks(1600), new TimeSpan(0, 3, 0, 0, 0)),
+                            Color = "#295e3b",
+                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 14, 12, 26, 47, 494, DateTimeKind.Unspecified).AddTicks(5808), new TimeSpan(0, 3, 0, 0, 0)),
                             IsDefaulte = false,
-                            Model = "LCIMCGNP",
-                            Number = "QW4529WV",
+                            Model = "RMUEBVDL",
+                            Number = "BE1387PW",
                             UserId = 1L
                         },
                         new
                         {
                             Id = 3L,
-                            Color = "#156b7e",
-                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 14, 11, 45, 21, 981, DateTimeKind.Unspecified).AddTicks(1600), new TimeSpan(0, 3, 0, 0, 0)),
+                            Color = "#2e724f",
+                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 14, 12, 26, 47, 494, DateTimeKind.Unspecified).AddTicks(5808), new TimeSpan(0, 3, 0, 0, 0)),
                             IsDefaulte = false,
-                            Model = "MXGLRWTE",
-                            Number = "TN1133HU",
-                            UserId = 2L
-                        },
-                        new
-                        {
-                            Id = 4L,
-                            Color = "#6c7066",
-                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 14, 11, 45, 21, 981, DateTimeKind.Unspecified).AddTicks(1600), new TimeSpan(0, 3, 0, 0, 0)),
-                            IsDefaulte = false,
-                            Model = "HNBPRXOL",
-                            Number = "BF8511GM",
+                            Model = "JDPDBMKN",
+                            Number = "TL4821XF",
                             UserId = 1L
                         },
                         new
                         {
-                            Id = 5L,
-                            Color = "#755361",
-                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 14, 11, 45, 21, 981, DateTimeKind.Unspecified).AddTicks(1600), new TimeSpan(0, 3, 0, 0, 0)),
+                            Id = 4L,
+                            Color = "#71580f",
+                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 14, 12, 26, 47, 494, DateTimeKind.Unspecified).AddTicks(5808), new TimeSpan(0, 3, 0, 0, 0)),
                             IsDefaulte = false,
-                            Model = "LJTCSGFW",
-                            Number = "OC7726RX",
+                            Model = "WCLHBGXS",
+                            Number = "IP6435GO",
+                            UserId = 2L
+                        },
+                        new
+                        {
+                            Id = 5L,
+                            Color = "#562d08",
+                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 14, 12, 26, 47, 494, DateTimeKind.Unspecified).AddTicks(5808), new TimeSpan(0, 3, 0, 0, 0)),
+                            IsDefaulte = false,
+                            Model = "KOPNQFCS",
+                            Number = "SK5410DG",
                             UserId = 2L
                         },
                         new
                         {
                             Id = 6L,
-                            Color = "#5e7b6f",
-                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 14, 11, 45, 21, 981, DateTimeKind.Unspecified).AddTicks(1600), new TimeSpan(0, 3, 0, 0, 0)),
+                            Color = "#3a724f",
+                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 14, 12, 26, 47, 494, DateTimeKind.Unspecified).AddTicks(5808), new TimeSpan(0, 3, 0, 0, 0)),
                             IsDefaulte = false,
-                            Model = "HHCOQPBE",
-                            Number = "AT0208CV",
-                            UserId = 1L
+                            Model = "NQEETAMR",
+                            Number = "UJ3670XH",
+                            UserId = 2L
                         },
                         new
                         {
                             Id = 7L,
-                            Color = "#221d35",
-                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 14, 11, 45, 21, 981, DateTimeKind.Unspecified).AddTicks(1600), new TimeSpan(0, 3, 0, 0, 0)),
+                            Color = "#343c64",
+                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 14, 12, 26, 47, 494, DateTimeKind.Unspecified).AddTicks(5808), new TimeSpan(0, 3, 0, 0, 0)),
                             IsDefaulte = false,
-                            Model = "SQVXMDFM",
-                            Number = "KH5110UD",
-                            UserId = 1L
+                            Model = "EEXWBGJH",
+                            Number = "JA9563XS",
+                            UserId = 2L
                         },
                         new
                         {
                             Id = 8L,
-                            Color = "#390f0b",
-                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 14, 11, 45, 21, 981, DateTimeKind.Unspecified).AddTicks(1600), new TimeSpan(0, 3, 0, 0, 0)),
+                            Color = "#5c200f",
+                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 14, 12, 26, 47, 494, DateTimeKind.Unspecified).AddTicks(5808), new TimeSpan(0, 3, 0, 0, 0)),
                             IsDefaulte = false,
-                            Model = "EAVTBKQK",
-                            Number = "MT2972XO",
+                            Model = "QIWJCVQB",
+                            Number = "BT8772OI",
                             UserId = 2L
                         },
                         new
                         {
                             Id = 9L,
-                            Color = "#680876",
-                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 14, 11, 45, 21, 981, DateTimeKind.Unspecified).AddTicks(1600), new TimeSpan(0, 3, 0, 0, 0)),
+                            Color = "#23486a",
+                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 14, 12, 26, 47, 494, DateTimeKind.Unspecified).AddTicks(5808), new TimeSpan(0, 3, 0, 0, 0)),
                             IsDefaulte = false,
-                            Model = "JNSRETEX",
-                            Number = "WX6557GS",
+                            Model = "OEIULTBK",
+                            Number = "CF9919ET",
                             UserId = 1L
                         },
                         new
                         {
                             Id = 10L,
-                            Color = "#1f144d",
-                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 14, 11, 45, 21, 981, DateTimeKind.Unspecified).AddTicks(1600), new TimeSpan(0, 3, 0, 0, 0)),
+                            Color = "#000a79",
+                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 14, 12, 26, 47, 494, DateTimeKind.Unspecified).AddTicks(5808), new TimeSpan(0, 3, 0, 0, 0)),
                             IsDefaulte = false,
-                            Model = "KTXPCPJT",
-                            Number = "BG7118QO",
+                            Model = "OIGNEDTK",
+                            Number = "RO0132BL",
                             UserId = 1L
                         });
                 });
@@ -274,92 +274,92 @@ namespace ParkingApi.Migrations
                         new
                         {
                             Id = 1L,
-                            Address = "en",
-                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 14, 11, 45, 21, 934, DateTimeKind.Unspecified).AddTicks(3694), new TimeSpan(0, 3, 0, 0, 0)),
-                            Price = 7.5722123624627535,
-                            SecondFrom = 17639L,
-                            SecondTo = 15889L
+                            Address = "564 Letha Pines, Aileenhaven, Palau",
+                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 14, 12, 26, 47, 423, DateTimeKind.Unspecified).AddTicks(6746), new TimeSpan(0, 3, 0, 0, 0)),
+                            Price = 6.0910316957584731,
+                            SecondFrom = 10378L,
+                            SecondTo = 19410L
                         },
                         new
                         {
                             Id = 2L,
-                            Address = "en",
-                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 14, 11, 45, 21, 934, DateTimeKind.Unspecified).AddTicks(3694), new TimeSpan(0, 3, 0, 0, 0)),
-                            Price = 8.4012710947549305,
-                            SecondFrom = 18446L,
-                            SecondTo = 19965L
+                            Address = "9006 Brando Fall, Hartmannborough, Thailand",
+                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 14, 12, 26, 47, 423, DateTimeKind.Unspecified).AddTicks(6746), new TimeSpan(0, 3, 0, 0, 0)),
+                            Price = 6.0677095298039303,
+                            SecondFrom = 19991L,
+                            SecondTo = 14032L
                         },
                         new
                         {
                             Id = 3L,
-                            Address = "en",
-                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 14, 11, 45, 21, 934, DateTimeKind.Unspecified).AddTicks(3694), new TimeSpan(0, 3, 0, 0, 0)),
-                            Price = 5.3966689763575184,
-                            SecondFrom = 13412L,
-                            SecondTo = 17260L
+                            Address = "6522 Julien Knoll, Lydaside, Croatia",
+                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 14, 12, 26, 47, 423, DateTimeKind.Unspecified).AddTicks(6746), new TimeSpan(0, 3, 0, 0, 0)),
+                            Price = 7.6916030946614233,
+                            SecondFrom = 13798L,
+                            SecondTo = 15125L
                         },
                         new
                         {
                             Id = 4L,
-                            Address = "en",
-                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 14, 11, 45, 21, 934, DateTimeKind.Unspecified).AddTicks(3694), new TimeSpan(0, 3, 0, 0, 0)),
-                            Price = 9.6393418822620731,
-                            SecondFrom = 14161L,
-                            SecondTo = 19332L
+                            Address = "3661 Bartoletti Mission, Predovicstad, Estonia",
+                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 14, 12, 26, 47, 423, DateTimeKind.Unspecified).AddTicks(6746), new TimeSpan(0, 3, 0, 0, 0)),
+                            Price = 5.7840557586327455,
+                            SecondFrom = 17815L,
+                            SecondTo = 12655L
                         },
                         new
                         {
                             Id = 5L,
-                            Address = "en",
-                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 14, 11, 45, 21, 934, DateTimeKind.Unspecified).AddTicks(3694), new TimeSpan(0, 3, 0, 0, 0)),
-                            Price = 6.5656667722229223,
-                            SecondFrom = 10737L,
-                            SecondTo = 18698L
+                            Address = "5548 Dayna Courts, Taraport, Faroe Islands",
+                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 14, 12, 26, 47, 423, DateTimeKind.Unspecified).AddTicks(6746), new TimeSpan(0, 3, 0, 0, 0)),
+                            Price = 5.818217841823687,
+                            SecondFrom = 18501L,
+                            SecondTo = 11478L
                         },
                         new
                         {
                             Id = 6L,
-                            Address = "en",
-                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 14, 11, 45, 21, 934, DateTimeKind.Unspecified).AddTicks(3694), new TimeSpan(0, 3, 0, 0, 0)),
-                            Price = 8.6058167338398359,
-                            SecondFrom = 17551L,
-                            SecondTo = 18411L
+                            Address = "984 Friedrich Place, Kovacekborough, New Zealand",
+                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 14, 12, 26, 47, 423, DateTimeKind.Unspecified).AddTicks(6746), new TimeSpan(0, 3, 0, 0, 0)),
+                            Price = 9.7358093921727544,
+                            SecondFrom = 19760L,
+                            SecondTo = 10248L
                         },
                         new
                         {
                             Id = 7L,
-                            Address = "en",
-                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 14, 11, 45, 21, 934, DateTimeKind.Unspecified).AddTicks(3694), new TimeSpan(0, 3, 0, 0, 0)),
-                            Price = 8.3811668485315352,
-                            SecondFrom = 12720L,
-                            SecondTo = 17749L
+                            Address = "413 Eryn Pine, Port Chasity, Cocos (Keeling) Islands",
+                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 14, 12, 26, 47, 423, DateTimeKind.Unspecified).AddTicks(6746), new TimeSpan(0, 3, 0, 0, 0)),
+                            Price = 8.8549677812750289,
+                            SecondFrom = 14435L,
+                            SecondTo = 11237L
                         },
                         new
                         {
                             Id = 8L,
-                            Address = "en",
-                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 14, 11, 45, 21, 934, DateTimeKind.Unspecified).AddTicks(3694), new TimeSpan(0, 3, 0, 0, 0)),
-                            Price = 6.1416014871288098,
-                            SecondFrom = 12022L,
-                            SecondTo = 19409L
+                            Address = "46466 Lowe Alley, Madisynview, Nicaragua",
+                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 14, 12, 26, 47, 423, DateTimeKind.Unspecified).AddTicks(6746), new TimeSpan(0, 3, 0, 0, 0)),
+                            Price = 5.819535009013272,
+                            SecondFrom = 19041L,
+                            SecondTo = 14798L
                         },
                         new
                         {
                             Id = 9L,
-                            Address = "en",
-                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 14, 11, 45, 21, 934, DateTimeKind.Unspecified).AddTicks(3694), new TimeSpan(0, 3, 0, 0, 0)),
-                            Price = 9.9844671995306697,
-                            SecondFrom = 19169L,
-                            SecondTo = 15358L
+                            Address = "826 Mayert Turnpike, West Blanca, Hungary",
+                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 14, 12, 26, 47, 423, DateTimeKind.Unspecified).AddTicks(6746), new TimeSpan(0, 3, 0, 0, 0)),
+                            Price = 7.1510426523867263,
+                            SecondFrom = 17794L,
+                            SecondTo = 11228L
                         },
                         new
                         {
                             Id = 10L,
-                            Address = "en",
-                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 14, 11, 45, 21, 934, DateTimeKind.Unspecified).AddTicks(3694), new TimeSpan(0, 3, 0, 0, 0)),
-                            Price = 7.5691091327784159,
-                            SecondFrom = 11052L,
-                            SecondTo = 18045L
+                            Address = "395 Ernest Roads, South Mohamed, Qatar",
+                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 14, 12, 26, 47, 423, DateTimeKind.Unspecified).AddTicks(6746), new TimeSpan(0, 3, 0, 0, 0)),
+                            Price = 9.378280874517877,
+                            SecondFrom = 18004L,
+                            SecondTo = 17120L
                         });
                 });
 
@@ -399,91 +399,91 @@ namespace ParkingApi.Migrations
                         {
                             Id = 1L,
                             CarId = 1L,
-                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 14, 11, 45, 21, 993, DateTimeKind.Unspecified).AddTicks(8980), new TimeSpan(0, 3, 0, 0, 0)),
-                            EndTime = new DateTime(2021, 9, 14, 12, 45, 21, 993, DateTimeKind.Local).AddTicks(8279),
-                            ParkingId = 1L,
-                            StartTime = new DateTime(2021, 9, 14, 11, 45, 21, 993, DateTimeKind.Local).AddTicks(3362)
+                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 14, 12, 26, 47, 508, DateTimeKind.Unspecified).AddTicks(7650), new TimeSpan(0, 3, 0, 0, 0)),
+                            EndTime = new DateTime(2021, 9, 14, 13, 26, 47, 508, DateTimeKind.Local).AddTicks(6919),
+                            ParkingId = 2L,
+                            StartTime = new DateTime(2021, 9, 14, 12, 26, 47, 508, DateTimeKind.Local).AddTicks(754)
                         },
                         new
                         {
                             Id = 2L,
                             CarId = 2L,
-                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 14, 11, 45, 21, 993, DateTimeKind.Unspecified).AddTicks(8980), new TimeSpan(0, 3, 0, 0, 0)),
-                            EndTime = new DateTime(2021, 9, 14, 12, 45, 21, 993, DateTimeKind.Local).AddTicks(8279),
-                            ParkingId = 2L,
-                            StartTime = new DateTime(2021, 9, 14, 11, 45, 21, 993, DateTimeKind.Local).AddTicks(3362)
+                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 14, 12, 26, 47, 508, DateTimeKind.Unspecified).AddTicks(7650), new TimeSpan(0, 3, 0, 0, 0)),
+                            EndTime = new DateTime(2021, 9, 14, 13, 26, 47, 508, DateTimeKind.Local).AddTicks(6919),
+                            ParkingId = 1L,
+                            StartTime = new DateTime(2021, 9, 14, 12, 26, 47, 508, DateTimeKind.Local).AddTicks(754)
                         },
                         new
                         {
                             Id = 3L,
                             CarId = 3L,
-                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 14, 11, 45, 21, 993, DateTimeKind.Unspecified).AddTicks(8980), new TimeSpan(0, 3, 0, 0, 0)),
-                            EndTime = new DateTime(2021, 9, 14, 12, 45, 21, 993, DateTimeKind.Local).AddTicks(8279),
-                            ParkingId = 1L,
-                            StartTime = new DateTime(2021, 9, 14, 11, 45, 21, 993, DateTimeKind.Local).AddTicks(3362)
+                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 14, 12, 26, 47, 508, DateTimeKind.Unspecified).AddTicks(7650), new TimeSpan(0, 3, 0, 0, 0)),
+                            EndTime = new DateTime(2021, 9, 14, 13, 26, 47, 508, DateTimeKind.Local).AddTicks(6919),
+                            ParkingId = 2L,
+                            StartTime = new DateTime(2021, 9, 14, 12, 26, 47, 508, DateTimeKind.Local).AddTicks(754)
                         },
                         new
                         {
                             Id = 4L,
                             CarId = 4L,
-                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 14, 11, 45, 21, 993, DateTimeKind.Unspecified).AddTicks(8980), new TimeSpan(0, 3, 0, 0, 0)),
-                            EndTime = new DateTime(2021, 9, 14, 12, 45, 21, 993, DateTimeKind.Local).AddTicks(8279),
+                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 14, 12, 26, 47, 508, DateTimeKind.Unspecified).AddTicks(7650), new TimeSpan(0, 3, 0, 0, 0)),
+                            EndTime = new DateTime(2021, 9, 14, 13, 26, 47, 508, DateTimeKind.Local).AddTicks(6919),
                             ParkingId = 2L,
-                            StartTime = new DateTime(2021, 9, 14, 11, 45, 21, 993, DateTimeKind.Local).AddTicks(3362)
+                            StartTime = new DateTime(2021, 9, 14, 12, 26, 47, 508, DateTimeKind.Local).AddTicks(754)
                         },
                         new
                         {
                             Id = 5L,
                             CarId = 5L,
-                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 14, 11, 45, 21, 993, DateTimeKind.Unspecified).AddTicks(8980), new TimeSpan(0, 3, 0, 0, 0)),
-                            EndTime = new DateTime(2021, 9, 14, 12, 45, 21, 993, DateTimeKind.Local).AddTicks(8279),
-                            ParkingId = 1L,
-                            StartTime = new DateTime(2021, 9, 14, 11, 45, 21, 993, DateTimeKind.Local).AddTicks(3362)
+                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 14, 12, 26, 47, 508, DateTimeKind.Unspecified).AddTicks(7650), new TimeSpan(0, 3, 0, 0, 0)),
+                            EndTime = new DateTime(2021, 9, 14, 13, 26, 47, 508, DateTimeKind.Local).AddTicks(6919),
+                            ParkingId = 2L,
+                            StartTime = new DateTime(2021, 9, 14, 12, 26, 47, 508, DateTimeKind.Local).AddTicks(754)
                         },
                         new
                         {
                             Id = 6L,
                             CarId = 6L,
-                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 14, 11, 45, 21, 993, DateTimeKind.Unspecified).AddTicks(8980), new TimeSpan(0, 3, 0, 0, 0)),
-                            EndTime = new DateTime(2021, 9, 14, 12, 45, 21, 993, DateTimeKind.Local).AddTicks(8279),
+                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 14, 12, 26, 47, 508, DateTimeKind.Unspecified).AddTicks(7650), new TimeSpan(0, 3, 0, 0, 0)),
+                            EndTime = new DateTime(2021, 9, 14, 13, 26, 47, 508, DateTimeKind.Local).AddTicks(6919),
                             ParkingId = 2L,
-                            StartTime = new DateTime(2021, 9, 14, 11, 45, 21, 993, DateTimeKind.Local).AddTicks(3362)
+                            StartTime = new DateTime(2021, 9, 14, 12, 26, 47, 508, DateTimeKind.Local).AddTicks(754)
                         },
                         new
                         {
                             Id = 7L,
                             CarId = 7L,
-                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 14, 11, 45, 21, 993, DateTimeKind.Unspecified).AddTicks(8980), new TimeSpan(0, 3, 0, 0, 0)),
-                            EndTime = new DateTime(2021, 9, 14, 12, 45, 21, 993, DateTimeKind.Local).AddTicks(8279),
-                            ParkingId = 1L,
-                            StartTime = new DateTime(2021, 9, 14, 11, 45, 21, 993, DateTimeKind.Local).AddTicks(3362)
+                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 14, 12, 26, 47, 508, DateTimeKind.Unspecified).AddTicks(7650), new TimeSpan(0, 3, 0, 0, 0)),
+                            EndTime = new DateTime(2021, 9, 14, 13, 26, 47, 508, DateTimeKind.Local).AddTicks(6919),
+                            ParkingId = 2L,
+                            StartTime = new DateTime(2021, 9, 14, 12, 26, 47, 508, DateTimeKind.Local).AddTicks(754)
                         },
                         new
                         {
                             Id = 8L,
                             CarId = 8L,
-                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 14, 11, 45, 21, 993, DateTimeKind.Unspecified).AddTicks(8980), new TimeSpan(0, 3, 0, 0, 0)),
-                            EndTime = new DateTime(2021, 9, 14, 12, 45, 21, 993, DateTimeKind.Local).AddTicks(8279),
-                            ParkingId = 1L,
-                            StartTime = new DateTime(2021, 9, 14, 11, 45, 21, 993, DateTimeKind.Local).AddTicks(3362)
+                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 14, 12, 26, 47, 508, DateTimeKind.Unspecified).AddTicks(7650), new TimeSpan(0, 3, 0, 0, 0)),
+                            EndTime = new DateTime(2021, 9, 14, 13, 26, 47, 508, DateTimeKind.Local).AddTicks(6919),
+                            ParkingId = 2L,
+                            StartTime = new DateTime(2021, 9, 14, 12, 26, 47, 508, DateTimeKind.Local).AddTicks(754)
                         },
                         new
                         {
                             Id = 9L,
                             CarId = 9L,
-                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 14, 11, 45, 21, 993, DateTimeKind.Unspecified).AddTicks(8980), new TimeSpan(0, 3, 0, 0, 0)),
-                            EndTime = new DateTime(2021, 9, 14, 12, 45, 21, 993, DateTimeKind.Local).AddTicks(8279),
+                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 14, 12, 26, 47, 508, DateTimeKind.Unspecified).AddTicks(7650), new TimeSpan(0, 3, 0, 0, 0)),
+                            EndTime = new DateTime(2021, 9, 14, 13, 26, 47, 508, DateTimeKind.Local).AddTicks(6919),
                             ParkingId = 1L,
-                            StartTime = new DateTime(2021, 9, 14, 11, 45, 21, 993, DateTimeKind.Local).AddTicks(3362)
+                            StartTime = new DateTime(2021, 9, 14, 12, 26, 47, 508, DateTimeKind.Local).AddTicks(754)
                         },
                         new
                         {
                             Id = 10L,
                             CarId = 10L,
-                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 14, 11, 45, 21, 993, DateTimeKind.Unspecified).AddTicks(8980), new TimeSpan(0, 3, 0, 0, 0)),
-                            EndTime = new DateTime(2021, 9, 14, 12, 45, 21, 993, DateTimeKind.Local).AddTicks(8279),
-                            ParkingId = 1L,
-                            StartTime = new DateTime(2021, 9, 14, 11, 45, 21, 993, DateTimeKind.Local).AddTicks(3362)
+                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 14, 12, 26, 47, 508, DateTimeKind.Unspecified).AddTicks(7650), new TimeSpan(0, 3, 0, 0, 0)),
+                            EndTime = new DateTime(2021, 9, 14, 13, 26, 47, 508, DateTimeKind.Local).AddTicks(6919),
+                            ParkingId = 2L,
+                            StartTime = new DateTime(2021, 9, 14, 12, 26, 47, 508, DateTimeKind.Local).AddTicks(754)
                         });
                 });
 
@@ -526,26 +526,26 @@ namespace ParkingApi.Migrations
                         new
                         {
                             Id = 1L,
-                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 14, 11, 45, 21, 970, DateTimeKind.Unspecified).AddTicks(3153), new TimeSpan(0, 3, 0, 0, 0)),
+                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 14, 12, 26, 47, 482, DateTimeKind.Unspecified).AddTicks(5477), new TimeSpan(0, 3, 0, 0, 0)),
                             Email = "string",
                             First_name = "John",
                             IsAccess = true,
                             Last_name = "Doe",
-                            Password = "0es5Z6h0OhZFHJAZPnbrYecyXZvuXDhDjvVbau2ra2E=",
+                            Password = "EJ7NO1W/KN+KOAcmt+i08BZPQWZiKjuEgLo6ujJyFbk=",
                             Phone = "+380994444333",
-                            StoredSalt = new byte[] { 241, 131, 49, 253, 172, 74, 73, 135, 2, 5, 23, 185, 11, 192, 70, 150 }
+                            StoredSalt = new byte[] { 186, 238, 98, 48, 43, 11, 19, 71, 203, 165, 173, 53, 210, 154, 14, 10 }
                         },
                         new
                         {
                             Id = 2L,
-                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 14, 11, 45, 21, 970, DateTimeKind.Unspecified).AddTicks(3232), new TimeSpan(0, 3, 0, 0, 0)),
+                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 14, 12, 26, 47, 482, DateTimeKind.Unspecified).AddTicks(5558), new TimeSpan(0, 3, 0, 0, 0)),
                             Email = "user@gmail.com",
                             First_name = "Ruslan",
                             IsAccess = true,
                             Last_name = "Tonus",
-                            Password = "0es5Z6h0OhZFHJAZPnbrYecyXZvuXDhDjvVbau2ra2E=",
+                            Password = "EJ7NO1W/KN+KOAcmt+i08BZPQWZiKjuEgLo6ujJyFbk=",
                             Phone = "+380993334444",
-                            StoredSalt = new byte[] { 241, 131, 49, 253, 172, 74, 73, 135, 2, 5, 23, 185, 11, 192, 70, 150 }
+                            StoredSalt = new byte[] { 186, 238, 98, 48, 43, 11, 19, 71, 203, 165, 173, 53, 210, 154, 14, 10 }
                         });
                 });
 
@@ -588,14 +588,14 @@ namespace ParkingApi.Migrations
                         new
                         {
                             Id = 1L,
-                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 14, 11, 45, 21, 856, DateTimeKind.Unspecified).AddTicks(2149), new TimeSpan(0, 3, 0, 0, 0)),
+                            CreatedDate = new DateTimeOffset(new DateTime(2021, 9, 14, 12, 26, 47, 332, DateTimeKind.Unspecified).AddTicks(7885), new TimeSpan(0, 3, 0, 0, 0)),
                             Email = "valet@gmail.com",
                             Full_name = "Valet Doe",
                             IsAccess = true,
                             Jetton = "123456",
-                            Password = "UtYB7nSKpFSuGOP2RyWpVuvjpKqHhq3vHba7EW3nPKI=",
+                            Password = "z2AMTzemMDqgn18wKFZiiGjDPK4P9x1QxW4ZLHWOEvc=",
                             Phone = "+380994444333",
-                            StoredSalt = new byte[] { 242, 0, 129, 145, 253, 192, 234, 148, 33, 159, 232, 188, 110, 176, 80, 169 }
+                            StoredSalt = new byte[] { 5, 12, 192, 77, 234, 108, 177, 82, 119, 74, 243, 223, 59, 115, 112, 84 }
                         });
                 });
 
